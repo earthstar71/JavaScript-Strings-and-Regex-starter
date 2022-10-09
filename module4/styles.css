@@ -1,0 +1,24 @@
+body {
+    margin: 2%;
+}
+
+.label {
+    font-size: 1.2rem;
+  }
+
+.form_input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    width: 50rem;
+    height: 10rem;
+ }
+
+.form_input:focus {
+    outline: none !important;
+    border:1px solid #072F5F;
+    box-shadow: 0 0 10px #1261A0;
+  }

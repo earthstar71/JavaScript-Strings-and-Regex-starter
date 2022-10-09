@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+   <h2> Currency converter </h2>
+   <p id="current_rate"> </p>
+   <p> <label  class="label">USD:</label>  <input type="text" id="usd" class="form_input"> </p>
+   <p> <label  class="label">EUR:</label> <input type="text" id="eur" class="form_input"></p>
+   <div id="note"></div>
+   <div id="note_2"></div>
+   <div id="note_3"></div>
+   <div id="emoji"></div>
+   <pre id="pre_tag"></pre>
+</body>
+
+<script>
+
+   const usdInput = document.getElementById('usd');
+   const eurInput = document.getElementById('eur');
+   const currentRate = 0.9;
+   const rateMsg = "The current USD/EUR rate is: " + currentRate;
+
+   document.getElementById("current_rate").textContent = rateMsg;
+
+   usdInput.addEventListener('input', () => {
+      eurInput.value = (usdInput.value * currentRate).toFixed(2);
+   });
+
+   eurInput.addEventListener('input', () => {
+      usdInput.value = (eurInput.value / currentRate).toFixed(2);
+   });
+   
+   
+</script>
+
+</html>
