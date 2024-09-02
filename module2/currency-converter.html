@@ -57,8 +57,28 @@
 
    // document.getElementById('note_2').innerText = literal_with_func;
 
+   const money = '💸';
+   console.log(money);
+   const emojiDiv = document.getElementById('emoji');
+   emojiDiv.innerText = money;
+
+   const moneyMessage = '💸Our rates are the best!';
+   console.log(moneyMessage.slice(1))
+   console.log(moneyMessage.slice(2))
+
+   console.log(money.length); // 2
+   console.log('🤦‍♂️'.length); // 5
+
+   console.log("A: " + "A".codePointAt(0)); // 65
+   console.log("z: " + "z".codePointAt(0)); // 122
+
+   console.log(money.codePointAt(0)); // 128184
+
+   console.log(String.fromCodePoint(128184))
+   console.log(String.fromCodePoint(128184))
+
 </script>
 
-<script type="text/javascript" src="/module3/_3special-chars.js"></script>
+<!-- <script type="text/javascript" src="/module3/_3special-chars.js"></script> -->
 
 </html>
